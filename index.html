@@ -1,78 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EcoWash Co. | Eco-Friendly Laundry Service</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<title>Memory Number Game</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Header -->
-  <header class="navbar">
-    <h1 class="logo">EcoWash</h1>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#how">How It Works</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#contact" class="btn">Book Pickup</a>
-    </nav>
-  </header>
+<div class="background"></div>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h2>Eco-Friendly Laundry, Made Easy</h2>
-    <p>Fresh clothes. Zero hassle. Planet-friendly washing.</p>
-    <a href="#contact" class="btn primary">Schedule Pickup</a>
-  </section>
+<div class="container">
+    <h1>Memory Number Test</h1>
 
-  <!-- Services -->
-  <section id="services" class="section">
-    <h3>Our Services</h3>
-    <div class="cards">
-      <div class="card"><a href="wash.jpg">Wash & Fold</a></div>
-      <div class="card"><a href="dry.jpg">Dry Cleaning</a></div>
-      <div class="card"><a href="iron.jpg">Ironing</a></div>
-      <div class="card"><a href="plan.jpg">Monthly Plans</a></div>
-    </div>
-  </section>
+    <div id="timer"></div>
 
-  <!-- How It Works -->
-  <section id="how" class="section alt">
-    <h3>How It Works</h3>
-    <div class="steps">
-      <div><a href="#contact">Pickup</a></div>
-      <div><a href="eco.jpg">Eco Wash</a></div>
-      <div><a href="delivery.jpg">Fresh Delivery</a></div>
-    </div>
-  </section>
+    <div id="number"></div>
 
-  <!-- Pricing -->
-  <section id="pricing" class="section">
-    <h3>Simple Pricing</h3>
-    <p>Starting at <strong>₹99/kg</strong></p>
-    <a href="#contact" class="btn">View Plans</a>
-  </section>
+    <div id="inputs"></div>
 
-  <!-- Contact -->
-  <section id="contact" class="section alt">
-    <h3>Book a Pickup</h3>
-    <form class="form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="tel" placeholder="Phone Number" required />
-      <input type="date">
-      <input type="time">
-      <textarea placeholder="Pickup Address"></textarea>
-      <button class="btn primary">Submit</button>
-    </form>
-  </section>
+    <button class="start-btn" onclick="startGame()">Start</button>
 
-  <!-- Footer -->
-  <footer>
-    <p>Washed with biodegradable detergents</p>
-    <p>©️ 2026 EcoWash Co.</p>
-  </footer>
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
